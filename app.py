@@ -13,7 +13,7 @@ ICON = {"SAFE": "🟢", "WARNING": "🟡", "CRITICAL": "🔴", "EXPIRED": "⚫"}
 
 @st.cache_data
 def load_csv():
-    return [pd.read_csv(f"data/{n}.csv").fillna("") for n in ("organs", "recipients", "hospitals")]
+    return [pd.read_csv(f"{n}.csv").fillna("") for n in ("organs", "recipients", "hospitals")]
 
 def system():
     if "sys" not in st.session_state:
