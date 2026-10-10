@@ -1,0 +1,6 @@
+
+# Virtual environments
+venv/
+OrganFlow_Updated/frontend/venv/
+__pycache__/
+*.py[cod]
